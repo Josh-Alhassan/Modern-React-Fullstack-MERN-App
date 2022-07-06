@@ -5,7 +5,7 @@ import "./style.css";
 export default function App() {
   return (
     <>
-      <Header text= 'Hello World'> </Header>
+      <Header > </Header>
       <div className="container">
         <h1> My App </h1>
       </div>

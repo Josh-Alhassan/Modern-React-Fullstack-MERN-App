@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
+// import propTypes from 'prop-types'
 
 function Header({text}) {
   return (
@@ -15,6 +15,8 @@ Header.defaultProps = {
   text: "Feedback UI",
 }
 
-Header.propTypes = {
-  text: PropTypes.string,
-}
+// Header.propTypes = {
+//   text: PropTypes.string,
+// }
+
+export default Header

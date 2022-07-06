@@ -9,20 +9,29 @@ export default function App() {
     {id:2, text: 'comment two'},
     {id:3, text: 'comment three'},
     {id:4, text: 'comment four'}
-  ]
-  return (
-    <div className='container'>
-      <h1> {title.toUpperCase()} </h1>
-      <p> {body} </p>
+  ];
 
-      <div className="comments">
+  const loading = false;
+  const showComments = true;
+
+  if (loading) return <h1> loading... </h1>
+
+  const commentBlock = (
+    <div className="comments">
         <h2>Comments ({comments.length})</h2>
         <ul>
           {comments.map((comment, index) => (
             <li key={index}> {comment.text} </li>
           ))}
         </ul>
-      </div>
+    </div>
+  )
+  return (
+    <div className='container'>
+      <h1> {title.toUpperCase()} </h1>
+      <p> {body} </p>
+
+      {showComments && commentBlock}
     </div>
   );
 }

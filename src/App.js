@@ -1,13 +1,15 @@
 import React from "react";
 import Header from './component/Header'
+import FeedbackItem from './component/FeedbackItem'
 import "./style.css";
 
 export default function App() {
   return (
     <>
-      <Header > </Header>
+      <Header /> 
       <div className="container">
-        <h1> My App </h1>
+        <FeedbackItem />
+        {/* <h1> My App </h1> */}
       </div>
     </>
   )
